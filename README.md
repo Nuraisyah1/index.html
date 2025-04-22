@@ -2,147 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>100 HTML Tags</title>
+  <title>Menu Planner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="https://example.com/">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <h1>Judul Situs</h1>
+    <h1>Weekly Menu Planner</h1>
     <nav>
-      <menu>
-        <menuitem label="Home"></menuitem>
-      </menu>
       <ul>
-        <li><a href="#section1">Bagian 1</a></li>
-        <li><a href="#section2">Bagian 2</a></li>
+        <li><a href="#monday">Monday</a></li>
+        <li><a href="#tuesday">Tuesday</a></li>
+        <li><a href="#wednesday">Wednesday</a></li>
+        <li><a href="#thursday">Thursday</a></li>
+        <li><a href="#friday">Friday</a></li>
+        <li><a href="#saturday">Saturday</a></li>
+        <li><a href="#sunday">Sunday</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="section1">
-      <h2>Bagian Satu</h2>
+    <section>
+      <h2>Overview</h2>
+      <p>Plan your weekly meals easily with images, nutritional data, and recipe links.</p>
+      <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Meal planning image">
+        <figcaption>Stay organized and eat better.</figcaption>
+      </figure>
+    </section>
+
+    <section id="monday">
+      <h2>Monday</h2>
       <article>
-        <h3>Artikel 1</h3>
-        <p>Ini paragraf <mark>penting</mark> dari artikel 1.</p>
-        <time datetime="2025-04-22">22 April 2025</time>
-        <address>Jl. Contoh No. 1, Indonesia</address>
-        <figure>
-          <img src="https://via.placeholder.com/150" alt="Contoh Gambar">
-          <figcaption>Gambar Placeholder</figcaption>
-        </figure>
-        <progress value="70" max="100"></progress>
-        <meter value="0.6">60%</meter>
+        <h3>Breakfast</h3>
+        <ul>
+          <li>Oatmeal with banana <a href="#">(Recipe)</a></li>
+        </ul>
+        <h3>Lunch</h3>
+        <ul>
+          <li>Grilled chicken salad <a href="#">(Recipe)</a></li>
+        </ul>
+        <h3>Dinner</h3>
+        <ul>
+          <li>Spaghetti with marinara sauce <a href="#">(Recipe)</a></li>
+        </ul>
       </article>
-
-      <aside>
-        <details>
-          <summary>Informasi Tambahan</summary>
-          <p>Ini adalah detail tambahan.</p>
-        </details>
-      </aside>
-
-      <blockquote cite="https://example.com">Ini adalah kutipan.</blockquote>
-      <cite>— Sumber Kutipan</cite>
-      <pre>kode:
-function hello() {
-  return "Hello!";
-}</pre>
-      <code>&lt;div&gt;Contoh Code&lt;/div&gt;</code>
-      <kbd>Ctrl + C</kbd>
-      <samp>Output Sistem</samp>
-      <var>x</var>
     </section>
 
-    <section id="section2">
-      <h2>Formulir</h2>
+    <section id="tuesday">
+      <h2>Tuesday</h2>
+      <article>
+        <h3>Breakfast</h3>
+        <ul>
+          <li>Scrambled eggs and toast <a href="#">(Recipe)</a></li>
+        </ul>
+        <h3>Lunch</h3>
+        <ul>
+          <li>Turkey sandwich <a href="#">(Recipe)</a></li>
+        </ul>
+        <h3>Dinner</h3>
+        <ul>
+          <li>Stir-fried vegetables with rice <a href="#">(Recipe)</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Continue similarly for the rest of the week -->
+
+    <section id="feedback">
+      <h2>Feedback</h2>
       <form>
-        <label for="nama">Nama:</label>
-        <input type="text" id="nama"><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email"><br>
-        <input type="checkbox" id="langganan">
-        <label for="langganan">Langganan</label><br>
-        <input type="radio" name="gender" value="L"> Laki-laki
-        <input type="radio" name="gender" value="P"> Perempuan<br>
-        <select>
-          <option value="1">Satu</option>
-          <option value="2">Dua</option>
-        </select><br>
-        <textarea rows="4" cols="50">Isi komentar di sini...</textarea><br>
-        <button type="submit">Kirim</button>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
       </form>
-
-      <table>
-        <caption>Data Siswa</caption>
-        <thead>
-          <tr><th>Nama</th><th>Umur</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Ani</td><td>17</td></tr>
-          <tr><td>Budi</td><td>18</td></tr>
-        </tbody>
-        <tfoot>
-          <tr><td colspan="2">Jumlah: 2 siswa</td></tr>
-        </tfoot>
-      </table>
     </section>
-
-    <hr>
-    <canvas id="myCanvas" width="200" height="100"></canvas>
-    <svg width="100" height="100">
-      <circle cx="50" cy="50" r="40" stroke="green" fill="yellow" />
-    </svg>
-    <iframe src="https://example.com" title="Contoh Iframe"></iframe>
-    <embed src="video.mp4" type="video/mp4">
-    <object data="data.pdf" type="application/pdf" width="300" height="200"></object>
-
-    <video width="320" height="240" controls>
-      <source src="video.mp4" type="video/mp4">
-    </video>
-
-    <audio controls>
-      <source src="audio.mp3" type="audio/mpeg">
-    </audio>
-
-    <b>Bold</b>
-    <i>Italic</i>
-    <u>Underline</u>
-    <strong>Strong</strong>
-    <em>Emphasis</em>
-    <abbr title="HyperText Markup Language">HTML</abbr>
-    <small>Small text</small>
-    <sub>Subscript</sub>
-    <sup>Superscript</sup>
-    <del>Hapus</del>
-    <ins>Tambah</ins>
-    <span>Ini span</span>
-    <br>
-    <wbr>
-    <noscript>Aktifkan JavaScript untuk konten lengkap</noscript>
-    <template>
-      <p>Ini adalah template</p>
-    </template>
-    <script>console.log("Hello World!");</script>
-
   </main>
 
   <footer>
-    <p>&copy; 2025 - Dibuat oleh <bdi>Nama</bdi></p>
-    <bdo dir="rtl">Teks Terbalik</bdo>
-    <data value="42">Jawaban</data>
-    <output>42</output>
-    <del>Data Lama</del>
-    <ins>Data Baru</ins>
-    <ruby>漢 <rt>Kan</rt></ruby>
-    <section>
-      <h4 hidden>Bagian Tersembunyi</h4>
-    </section>
+    <p>&copy; 2025 Menu Planner. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
-# index.html
