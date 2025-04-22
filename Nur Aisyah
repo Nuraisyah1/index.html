@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Perencana Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Perencana Menu Mingguan</h1>
+    <nav>
+      <ul>
+        <li><a href="#monday">Senin</a></li>
+        <li><a href="#tuesday">Selasa</a></li>
+        <li><a href="#wednesday">Rabu</a></li>
+        <li><a href="#thursday">Kamis</a></li>
+        <li><a href="#friday">Jumat</a></li>
+        <li><a href="#saturday">Sabtu</a></li>
+        <li><a href="#sunday">Minggu</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Gambaran Umum</h2>
+      <p>Rencanakan makanan mingguan Anda dengan mudah menggunakan gambar, data nutrisi, dan tautan resep.</p>
+      <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Gambar perencanaan makanan">
+        <figcaption>Tetap terorganisir dan makan lebih sehat.</figcaption>
+      </figure>
+    </section>
+
+    <section id="monday">
+      <h2>Senin</h2>
+      <article>
+        <h3>Sarapan</h3>
+        <ul>
+          <li>Oatmeal dengan pisang <a href="#">(Resep)</a></li>
+        </ul>
+        <h3>Makan Siang</h3>
+        <ul>
+          <li>Salad ayam panggang <a href="#">(Resep)</a></li>
+        </ul>
+        <h3>Makan Malam</h3>
+        <ul>
+          <li>Spaghetti dengan saus marinara <a href="#">(Resep)</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="tuesday">
+      <h2>Selasa</h2>
+      <article>
+        <h3>Sarapan</h3>
+        <ul>
+          <li>Telur orak-arik dan roti panggang <a href="#">(Resep)</a></li>
+        </ul>
+        <h3>Makan Siang</h3>
+        <ul>
+          <li>Sandwich kalkun <a href="#">(Resep)</a></li>
+        </ul>
+        <h3>Makan Malam</h3>
+        <ul>
+          <li>Sayuran tumis dengan nasi <a href="#">(Resep)</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Lanjutkan bagian hari lainnya dengan format yang sama -->
+
+    <section id="feedback">
+      <h2>Masukan</h2>
+      <form>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="comments">Komentar:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Perencana Menu. Seluruh hak cipta dilindungi.</p>
+  </footer>
+</body>
+</html>
