@@ -2,13 +2,9 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Perencana Menu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perencana Menu Mingguan</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; }
-    aside { background-color: #f0f0f0; padding: 10px; margin: 10px 0; }
-  </style>
 </head>
 <body>
   <header>
@@ -51,9 +47,6 @@
         <ul>
           <li>Spaghetti dengan saus marinara <a href="#">(Resep)</a></li>
         </ul>
-        <aside>
-          <p><strong>Tips Hari Ini:</strong> Minumlah cukup air!</p>
-        </aside>
       </article>
     </section>
 
@@ -72,56 +65,58 @@
         <ul>
           <li>Sayuran tumis dengan nasi <a href="#">(Resep)</a></li>
         </ul>
-        <details>
-          <summary>Lihat informasi nutrisi</summary>
-          <p>Kalori: 550 | Protein: 20g | Lemak: 18g</p>
-        </details>
       </article>
     </section>
 
-    <section id="tabel-nutrisi">
-      <h2>Tabel Nutrisi</h2>
-      <table>
-        <caption>Informasi Nutrisi Harian</caption>
-        <thead>
-          <tr>
-            <th>Hari</th>
-            <th>Kalori</th>
-            <th>Protein</th>
-            <th>Lemak</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Senin</td>
-            <td>1800</td>
-            <td>75g</td>
-            <td>60g</td>
-          </tr>
-          <tr>
-            <td>Selasa</td>
-            <td>1900</td>
-            <td>80g</td>
-            <td>65g</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <aside>
+      <h2>Tips Sehat</h2>
+      <p>Pastikan minum cukup air putih setiap hari!</p>
+    </aside>
 
-    <section id="video">
-      <h2>Video Masak</h2>
+    <section>
+      <h2>Video Memasak</h2>
       <video controls width="320">
-        <source src="video-masak.mp4" type="video/mp4">
+        <source src="sample-video.mp4" type="video/mp4">
         Browser Anda tidak mendukung video.
       </video>
     </section>
 
-    <section id="audio">
-      <h2>Podcast Nutrisi</h2>
+    <section>
+      <h2>Podcast Kesehatan</h2>
       <audio controls>
-        <source src="podcast.mp3" type="audio/mpeg">
+        <source src="sample-audio.mp3" type="audio/mpeg">
         Browser Anda tidak mendukung audio.
       </audio>
+    </section>
+
+    <section>
+      <h2>Informasi Tambahan</h2>
+      <details>
+        <summary>Kenapa perencanaan makanan itu penting?</summary>
+        <p>Dengan merencanakan makanan, Anda bisa menghemat uang, menghindari pemborosan, dan makan lebih sehat.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>Data Nutrisi Contoh</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Menu</th>
+            <th>Kalori</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Oatmeal dengan Pisang</td>
+            <td>250 kcal</td>
+          </tr>
+          <tr>
+            <td>Salad Ayam Panggang</td>
+            <td>350 kcal</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section id="feedback">
@@ -130,29 +125,24 @@
         <fieldset>
           <legend>Formulir Masukan</legend>
           <label for="name">Nama:</label>
-          <input type="text" id="name" name="name" required><br>
-
+          <input type="text" id="name" name="name">
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email"><br>
-
-          <label for="tanggal">Tanggal:</label>
-          <input type="date" id="tanggal" name="tanggal"><br>
-
-          <label for="rating">Penilaian:</label>
-          <input type="range" id="rating" name="rating" min="1" max="5"><br>
-
-          <label for="comments">Komentar:</label><br>
-          <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
-
+          <input type="email" id="email" name="email">
+          <label for="comments">Komentar:</label>
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
           <button type="submit">Kirim</button>
         </fieldset>
       </form>
     </section>
+
+    <address>
+      Hubungi kami di: Jalan Sehat No.123, Jakarta.<br>
+      Email: info@perencanamenu.id
+    </address>
   </main>
 
   <footer>
     <p>&copy; 2025 Perencana Menu. Seluruh hak cipta dilindungi.</p>
-    <address>Hubungi kami: <a href="mailto:info@menumakan.com">info@menumakan.com</a></address>
   </footer>
 </body>
 </html>
